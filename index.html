@@ -7,12 +7,29 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('img/bg.jpg'); /* Remplacez 'votre-image.jpg' par le chemin de votre image d'arrière-plan */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed; /* Assure que l'image de fond reste fixe lors du défilement */
             font-family: Arial, sans-serif;
             color: #fff;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background: url('img/bg.jpg');
+            background-size: cover;
+            opacity: 0.7;
+            z-index: 0;
         }
 
         .container {
@@ -21,6 +38,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+            z-index: 1;
         }
 
         h1 {
@@ -29,10 +47,13 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>WarpGates Studio</h1>
-    </div>
+<video autoplay loop muted>
+    <source src="img/bg.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la lecture de vidéos.
+</video>
+<div class="overlay"></div>
+<div class="container">
+    <h1>WaprGates Studio</h1>
+</div>
 </body>
 </html>
-
-
