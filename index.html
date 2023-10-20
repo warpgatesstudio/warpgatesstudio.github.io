@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WarpsGates Studio</title>
+    <title>WaprGates Studio</title>
     <style>
-        /* Réinitialisation des marges et des rembourrages pour le corps */
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-image: url('img/bg.jpg'); /* Remplacez 'votre-image.jpg' par le chemin de votre image d'arrière-plan */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Assure que l'image de fond reste fixe lors du défilement */
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Couleur de fond de la page */
+            color: #fff;
         }
 
-        /* Style du texte "WarpsGates Studio" */
-        .studio-name {
-            font-size: 36px;
-            font-weight: bold;
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
-            color: #333; /* Couleur du texte */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+        }
+
+        h1 {
+            font-size: 36px;
         }
     </style>
 </head>
 <body>
-    <div class="studio-name">WarpsGates Studio</div>
+    <div class="container">
+        <h1>WaprGates Studio</h1>
+    </div>
 </body>
 </html>
+
+
