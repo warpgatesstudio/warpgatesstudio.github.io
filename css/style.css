@@ -18,7 +18,7 @@ body {
 
 .header {
     width: 100%;
-    background: #333;
+    background: rgb(42, 43, 53);
     color: white;
     position: fixed;
     top: 0;
@@ -29,15 +29,23 @@ body {
 /* Menu */
 
 .menu {
-	width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
 
-.menu nav {
+.menu .nav{
+    flex-basis: 60%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.menu ul {
     width: 100%;
-	display: flex;
+    display: flex;
+    padding: 0; 
+    margin: 0; 
 }
 
 .menu li {
@@ -81,18 +89,42 @@ body {
 
 .body .background video {
     position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+    height: 100vh;
 }
 
 .body .background .overlay{
     position: fixed;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
     opacity: 0.7;
+}
+
+.body .background-desert{
+    height: 100vh;
+    background-image: url(../img/desert.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.body .background-medieval{
+    height: 100vh;
+    background-image: url(../img/medieval.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.body .background-moderne{
+    height: 100vh;
+    background-image: url(../img/moderne.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.body .background-apocalypse{
+    height: 100vh;
+    background-image: url(../img/apocalyptic.png);
+    background-size: cover;
+    background-position: center center;
 }
 
 .body .container {
@@ -109,13 +141,33 @@ body {
 }
 
 
+/* Footer */
+
+.footer {
+    width: 100%;
+    background: rgb(42, 43, 53);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p{
+    text-align: center;
+}
+
+/* Format mobile */
+
 @media screen and (max-width: 768px) {
+
+    .menu .nav {
+        flex-basis: 100%;
+    }
 
     .burger-menu {
         display: block;
     }
 
-    .menu nav {
+    .menu ul {
         display: none;
         width: 100%;
         flex-direction: column; 
@@ -126,7 +178,7 @@ body {
         padding: 10px 0;
     }
 
-    .menu.active nav {
+    .menu.active ul {
         display: flex; 
     }
 }
