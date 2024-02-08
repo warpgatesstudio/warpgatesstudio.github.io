@@ -33,7 +33,6 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px 0;
 }
 
 .menu .nav{
@@ -51,7 +50,8 @@ body {
 
 .menu li {
     list-style-type: none;
-    text-align: center; 
+    text-align: center;
+    font-size: 30px;
 }
 
 .menu a {
@@ -67,8 +67,8 @@ body {
 }
 
 .menu img {
-    height: 50px; 
-    width: auto; 
+    height: auto;
+    width: 40px;
 	margin-left: 10px;
 }
 
@@ -123,6 +123,10 @@ body {
 .background-acceuil h1 {
     font-size: 36px;
     color: white;
+}
+
+.all-text {
+    color: black;
 }
 
 /* Informations */
