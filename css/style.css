@@ -52,6 +52,7 @@ body {
     list-style-type: none;
     text-align: center;
     font-size: 30px;
+    padding-top: 2px;
 }
 
 .menu a {
