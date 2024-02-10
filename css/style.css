@@ -5,14 +5,6 @@
 	list-style: none;
 }
 
-html {
-    position: absolute;
-    min-height: 100%;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-}
-
 body {
 	background-color:white;
 	color: rgb(255, 255, 255);
@@ -100,6 +92,8 @@ body {
 /********/
 
 .parallax-effect {
+    width: 100%;
+    height: 100vh;
     min-height: 800px;
     background-attachment: fixed;
     background-position: center;
@@ -109,11 +103,11 @@ body {
 
 .title-text {
     position: relative;
-    padding-top: 350px;
+    padding-top: 45vh;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 /* Accueil */
@@ -122,19 +116,25 @@ body {
     background-image: url(../img/bg.jpg);
 }
 
+.title-text-acceuil {
+    color: white;
+}
+
 .score-title {
     position: relative;
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }
 
 .score-board {
     background-color: #101010Ba;
     position: relative;
     width: 100%;
+    height: 90vh;
+    min-height: 800px;
     text-align: center;
     overflow: hidden;
     padding-bottom: 50px;
@@ -145,22 +145,23 @@ body {
     position: relative;
     background-color: #101010aa;
     width: 80%;
+    height: 65vh;
     margin: auto;
 }
 
 .master-line{
-    width: 150px; /* Largeur fixe */
-    height: 50px; /* Hauteur fixe */
-    overflow: hidden; /* Pour gérer le débordement du texte */
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
     text-align: center;
     font-weight: bold;
     border: 2px solid #000000;
 }
 
 .line {
-    width: 150px; /* Largeur fixe */
-    height: 50px; /* Hauteur fixe */
-    overflow: hidden; /* Pour gérer le débordement du texte */
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
     text-align: center;
     border: 2px solid #000000;
 }
