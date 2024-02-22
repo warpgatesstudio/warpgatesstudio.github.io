@@ -110,12 +110,12 @@ body {
  }
 
 .title-text {
+    color: #ffffff;
     position: relative;
     padding-top: 45vh;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
-    color: black;
 }
 
 /* Accueil */
@@ -123,10 +123,6 @@ body {
 .parallax-effect-acceuil {
     background-image: url(../img/bg.jpg);
     min-height: 800px;
-}
-
-.title-text-acceuil {
-    color: white;
 }
 
 .score-title {
