@@ -199,7 +199,7 @@ body {
 
 .parallax-effect-thanks-tab {
     background-image: url(../img/apocalyptic.png);
-    min-height: 150vh;
+    min-height: 200vh;
 }
 
 .assets{
@@ -207,7 +207,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    min-height: 145vh;
+    min-height: 200vh;
     text-align: left;
     overflow: hidden;
     padding-top: 10px;
