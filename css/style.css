@@ -173,44 +173,35 @@ body {
 
 .parallax-effect-informations {
     background-image: url(../img/desert.png);
-    min-height: 800px;
 }
 
 /* Jeu */
 
 .parallax-effect-jeu {
     background-image: url(../img/medieval.png);
-    min-height: 800px;
 }
 
 /* Telechargement */
 
 .parallax-effect-download {
     background-image: url(../img/moderne.png);
-    min-height: 800px;
 }
 
 /* Remerciement */
 
 .parallax-effect-thanks {
     background-image: url(../img/apocalyptic.png);
-    min-height: 100vh;
-}
-
-.parallax-effect-thanks-tab {
-    background-image: url(../img/apocalyptic.png);
-    min-height: 200vh;
 }
 
 .assets{
-    background-color: #101010Ba;
+    background-color: #252424;
     position: relative;
     width: 100%;
-    height: 100vh;
-    min-height: 200vh;
     text-align: left;
     overflow: hidden;
-    padding-top: 10px;
+    padding-top: 20px;
+    display: flex;
+    padding-bottom: 20px;
 }
 
 .assets .entete {
