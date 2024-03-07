@@ -1,17 +1,12 @@
 * {
 	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	list-style: none;
 }
 
 body {
-    background-color: #252424;
+    background-color: #312f2f;
 	color: rgb(255, 255, 255);
 	font-family: "Segoe UI", Verdana, serif;
 	font-size:20pt;
-	margin:0;
-    padding: 0;
 }
 
 /**********/
