@@ -171,9 +171,15 @@ body {
 }
 
 .informations img {
-    align-items: center;
     justify-items: center;
     width: 30px;
+    height: auto;
+}
+
+.photo img{
+    display: flex;
+    margin: auto;
+    width: 50%;
     height: auto;
 }
 
