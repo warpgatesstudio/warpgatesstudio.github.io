@@ -113,6 +113,36 @@ body {
     font-weight: bold;
 }
 
+.ligne{
+    border:0;
+	margin-left: 7%;
+	width: 25%;
+	height: 4px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(247,245,245,1) 0%, rgba(87,87,87,1) 50%, rgba(41,38,38,1) 100%);
+}
+
+.texte{
+	text-align: justify;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.title {
+	text-align: justify;
+	padding-top: 20px;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.liste {
+	text-align: justify;
+	padding-bottom: 20px;
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
 /* Accueil */
 
 .parallax-effect-acceuil {
@@ -181,6 +211,8 @@ body {
     margin: auto;
     width: 50%;
     height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Jeu */
