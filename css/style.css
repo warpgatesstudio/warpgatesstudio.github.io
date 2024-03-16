@@ -116,9 +116,9 @@ body {
 .ligne{
     border:0;
 	margin-left: 7%;
-	width: 25%;
+	width: 30%;
 	height: 4px;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(247,245,245,1) 0%, rgba(87,87,87,1) 50%, rgba(41,38,38,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(247,245,245,1) 0%, rgba(87,87,87,1) 50%, rgb(49, 47, 47) 100%);
 }
 
 .texte{
@@ -215,6 +215,98 @@ body {
     padding-bottom: 20px;
 }
 
+.history-tl-container{
+    font-family: "Roboto",sans-serif;
+    width:50%;
+    display:block;
+    position:relative;
+}
+.history-tl-container ul.tl{
+    margin:20px 0;
+    padding:0;
+    display:inline-block;
+
+}
+.history-tl-container ul.tl li{
+    list-style: none;
+    margin-left:200px;
+    min-height:50px;
+    /*background: rgba(255,255,0,0.1);*/
+    border-left:1px dashed #86D6FF;
+    padding:0 0 50px 30px;
+    position:relative;
+}
+.history-tl-container ul.tl li:last-child{ border-left:0;}
+.history-tl-container ul.tl li::before{
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 0.74);
+    border-radius: 500%;
+    background: #4c566a;
+    height: 20px;
+    width: 20px;
+    transition: all 100ms linear;
+
+}
+.history-tl-container ul.tl li:hover::before{
+    border-color:  #4c566a;
+
+}
+ul.tl li .item-title:hover{
+    padding-left: 10px;
+    transition: all 100ms linear;
+}
+ul.tl li .item-title{
+    transition: all 100ms linear;
+}
+
+ul.tl li .timestamp{
+    color: #8D8D8D;
+    position: absolute;
+    width:100px;
+    left: -130px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.history-tl-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.probleme {
+    position: relative;
+    width: 100%;
+}
+
+.probleme table {
+    border-collapse: collapse;
+    position: relative;
+    background-color: rgba(28, 28, 28, 0.67);
+    width: 80%;
+    margin: auto;
+}
+
+.master-line-probleme{
+    text-align: left;
+    padding-left: 10px;
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+    font-weight: bold;
+    border: 2px solid #000000;
+}
+
+.line-probleme {
+    padding-left: 10px;
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+    border: 2px solid #000000;
+}
+
 /* Jeu */
 
 .parallax-effect-jeu {
@@ -226,6 +318,17 @@ body {
 .parallax-effect-download {
     background-image: url(../img/moderne.png);
 }
+
+.download a {
+    color: white;
+    text-decoration: underline;
+}
+
+.download a:hover {
+    color: #555;
+}
+
+
 
 /* Remerciement */
 
@@ -285,63 +388,6 @@ body {
 .footer p{
     text-align: center;
 }
-
-.history-tl-container{
-    font-family: "Roboto",sans-serif;
-    width:50%;
-    display:block;
-    position:relative;
-}
-.history-tl-container ul.tl{
-    margin:20px 0;
-    padding:0;
-    display:inline-block;
-
-}
-.history-tl-container ul.tl li{
-    list-style: none;
-    margin-left:200px;
-    min-height:50px;
-    /*background: rgba(255,255,0,0.1);*/
-    border-left:1px dashed #86D6FF;
-    padding:0 0 50px 30px;
-    position:relative;
-}
-.history-tl-container ul.tl li:last-child{ border-left:0;}
-.history-tl-container ul.tl li::before{
-    position: absolute;
-    left: -18px;
-    top: -5px;
-    content: " ";
-    border: 8px solid rgba(255, 255, 255, 0.74);
-    border-radius: 500%;
-    background: #4c566a;
-    height: 20px;
-    width: 20px;
-    transition: all 100ms linear;
-
-}
-.history-tl-container ul.tl li:hover::before{
-    border-color:  #4c566a;
-
-}
-ul.tl li .item-title:hover{
-    padding-left: 10px;
-    transition: all 100ms linear;
-}
-ul.tl li .item-title{
-    transition: all 100ms linear;
-}
-
-ul.tl li .timestamp{
-    color: #8D8D8D;
-    position: absolute;
-    width:100px;
-    left: -130px;
-    text-align: right;
-    font-size: 12px;
-}
-
 
 
 /*****************/
