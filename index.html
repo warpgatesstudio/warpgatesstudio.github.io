@@ -5,6 +5,21 @@
         <link rel="stylesheet" type="text/css" href="css/style.css?v=202422021339"/>
         <link href="img/logoG.png" rel="icon"/>
         <title>WaprGates Studio</title>
+
+        <style>
+            .score-title,
+            .score-board table {
+                opacity: 0;
+                transform: translateY(100px);
+                transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+            }
+
+            .score-title.visible,
+            .score-board table.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -143,5 +158,28 @@
             var menu = document.querySelector('.menu');
             menu.classList.toggle('active');
         }
+    </script>
+
+    <script>
+        const h2Element = document.querySelector('.score-title');
+        const h2Elementbis = document.querySelector('.score-board table');
+
+        window.addEventListener('scroll', () => {
+            const rect = h2Element.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                h2Element.classList.add('visible');
+            }
+            else {
+                h2Element.classList.remove('visible');
+            }
+
+            const rect2 = h2Elementbis.getBoundingClientRect();
+            if (rect2.top < window.innerHeight) {
+                h2Elementbis.classList.add('visible');
+            }
+            else {
+                h2Elementbis.classList.remove('visible');
+            }
+        });
     </script>
 </html>

@@ -5,6 +5,19 @@
         <link rel="stylesheet" type="text/css" href="css/style.css?v=202422021339"/>
         <link href="img/logoG.png" rel="icon"/>
         <title>WaprGates Studio</title>
+
+        <style>
+            .assets {
+                opacity: 0;
+                transform: translateY(100px);
+                transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+            }
+
+            .assets.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -201,5 +214,18 @@
             var menu = document.querySelector('.menu');
             menu.classList.toggle('active');
         }
+    </script>
+    <script>
+        const h2Element = document.querySelector('.assets');
+
+        window.addEventListener('scroll', () => {
+            const rect = h2Element.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                h2Element.classList.add('visible');
+            }
+            else {
+                h2Element.classList.remove('visible');
+            }
+        });
     </script>
 </html>

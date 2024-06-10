@@ -5,6 +5,27 @@
         <link rel="stylesheet" type="text/css" href="css/style.css?v=202422021339"/>
         <link href="img/logoG.png" rel="icon"/>
         <title>WaprGates Studio</title>
+
+        <style>
+            /* Styles de base pour le titre */
+            .informations h2,
+            .informations .texte,
+            .informations .ligne,
+            .informations .photo {
+                opacity: 0; /* Opacité initiale à 0 */
+                transform: translateY(100px); /* Translation initiale de 20 pixels vers le bas */
+                transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out; /* Animation */
+            }
+
+            /* Lorsque la classe .visible est ajoutée, l'opacité est définie à 1 et la translation initiale est annulée */
+            .informations h2.visible,
+            .informations .texte.visible,
+            .informations .ligne.visible,
+            .informations .photo.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -35,26 +56,28 @@
                 </div>
             </div>
             <div class="informations">
-                <h2 class="title">Qui sommes nous ?</h2>
+                <h2 class="title titlet1">Qui sommes nous ?</h2>
 
-                <hr class=ligne>
+                <hr class="ligne lignel1">
                 
-                <p class="texte">WarpGates Studio est une entreprise de développement et d’édition de jeux vidéo. Celle-ci fut fondée en 2023, par 5 épitéens, dans le but d’offrir un espace créatif d’innovation et d’assouvir la passion du jeux vidéo des élèves. Ces valeurs sont tout d’abord une autonomie totale des développeur afin de proposer au plus large public une experience inoubliable à travers d’exellents jeux.</p>
+                <p class="texte textep1">WarpGates Studio est une entreprise de développement et d’édition de jeux vidéo. Celle-ci fut fondée en 2023, par 5 épitéens, dans le but d’offrir un espace créatif d’innovation et d’assouvir la passion du jeux vidéo des élèves. Ces valeurs sont tout d’abord une autonomie totale des développeur afin de proposer au plus large public une experience inoubliable à travers d’exellents jeux.</p>
                 
-                <h2 class="title">Nos membres</h2>
+                <h2 class="title titlet2">Nos membres</h2>
 
-                <hr class=ligne>
+                <hr class="ligne lignel2">
 
-                <p class="texte">Noah Abi Chahla : Chef de projet <a href="https://github.com/Jubaidaa" target="_blank"><img src="img/github.png" alt="github"></a></p>
-                <p class="texte">Otto Debrie : Scénariste <a href="https://github.com/Otto303" target="_blank"><img src="img/github.png" alt="github"></a></p>
-                <p class="texte">Corentin Del Pozo : Superviseur Technique <a href="https://github.com/Darkrentin" target="_blank"><img src="img/github.png" alt="github"> <a href="https://www.linkedin.com/in/corentin-del-pozo-b6a507205/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a></a></p>
-                <p class="texte">Ilyann Gwinner : Chargé de Communication <a href="https://github.com/ilil2" target="_blank"><img src="img/github.png" alt="github"> <a href="https://www.linkedin.com/in/ilyann-gwinner-1676642b0/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a></a></p>
-                <p class="texte">Nathan Hirth : Concepteur de Niveaux <a href="https://github.com/Narth42" target="_blank"><img src="img/github.png" alt="github"> <a href="https://www.linkedin.com/in/nathan-hirth-1368b1238/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a></a></p>
+                <div class="texte textep2">
+                    <p>Noah Abi Chahla : Chef de projet <a href="https://github.com/Jubaidaa" target="_blank"><img src="img/github.png" alt="github"></a></p>
+                    <p>Otto Debrie : Scénariste <a href="https://github.com/Otto303" target="_blank"><img src="img/github.png" alt="github"></a></p>
+                    <p>Corentin Del Pozo : Superviseur Technique <a href="https://github.com/Darkrentin" target="_blank"><img src="img/github.png" alt="github"> <a href="https://www.linkedin.com/in/corentin-del-pozo-b6a507205/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a></a></p>
+                    <p>Ilyann Gwinner : Chargé de Communication <a href="https://github.com/ilil2" target="_blank"><img src="img/github.png" alt="github"> <a href="https://www.linkedin.com/in/ilyann-gwinner-1676642b0/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a></a></p>
+                    <p>Nathan Hirth : Concepteur de Niveaux <a href="https://github.com/Narth42" target="_blank"><img src="img/github.png" alt="github"> <a href="https://www.linkedin.com/in/nathan-hirth-1368b1238/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a></a></p>
+                </div>
                 <div class="photo">
                     <img src="img/groupe.jpg" alt="photo équipe">
                 </div>
-                <h2 class="title">Déroulement du Projet</h2>
-                <hr class=ligne>
+                <h2 class="title titlet3">Déroulement du Projet</h2>
+                <hr class="ligne lignel3">
                 <br>
                 <div class="history-tl-container">
                     <ul class="tl">
@@ -451,5 +474,74 @@
             var menu = document.querySelector('.menu');
             menu.classList.toggle('active');
         }
+    </script>
+    <script>
+        const h2Element = document.querySelector('.informations .titlet1');
+        const h2Elementbis = document.querySelector('.informations .lignel1');
+        const h2Elementtext = document.querySelector('.informations .textep1');
+
+        const h2Element2 = document.querySelector('.informations .titlet2');
+        const h2Element2bis = document.querySelector('.informations .lignel2');
+        const h2Element2text = document.querySelector('.informations .textep2');
+        const h2Element2img = document.querySelector('.informations .photo');
+
+        const h2Element3 = document.querySelector('.informations .titlet3');
+        const h2Element3bis = document.querySelector('.informations .lignel3');
+
+        window.addEventListener('scroll', () => {
+            const rect = h2Element.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                h2Element.classList.add('visible');
+                h2Elementbis.classList.add('visible');
+            }
+            else {
+                h2Element.classList.remove('visible'); // Retirez la classe .hidden
+                h2Elementbis.classList.remove('visible');
+            }
+            const rect2 = h2Elementtext.getBoundingClientRect();
+            if (rect2.top < window.innerHeight) {
+                h2Elementtext.classList.add('visible');
+            }
+            else {
+                h2Elementtext.classList.remove('visible'); // Retirez la classe .hidden
+            }
+
+            const rect3 = h2Element2.getBoundingClientRect();
+            if (rect3.top < window.innerHeight) {
+                h2Element2.classList.add('visible');
+                h2Element2bis.classList.add('visible');
+            }
+            else {
+                h2Element2.classList.remove('visible'); // Retirez la classe .hidden
+                h2Element2bis.classList.remove('visible');
+            }
+
+
+            const rect4 = h2Element2text.getBoundingClientRect();
+            if (rect4.top < window.innerHeight) {
+                h2Element2text.classList.add('visible');
+            }
+            else {
+                h2Element2text.classList.remove('visible'); // Retirez la classe .hidden
+            }
+
+            const rect4bis = h2Element2img.getBoundingClientRect();
+            if (rect4bis.top < window.innerHeight) {
+                h2Element2img.classList.add('visible');
+            }
+            else {
+                h2Element2img.classList.remove('visible');
+            }
+
+            const rect5 = h2Element3.getBoundingClientRect();
+            if (rect5.top < window.innerHeight) {
+                h2Element3.classList.add('visible');
+                h2Element3bis.classList.add('visible');
+            }
+            else {
+                h2Element3.classList.remove('visible');
+                h2Element3bis.classList.remove('visible');
+            }
+        });
     </script>
 </html>
