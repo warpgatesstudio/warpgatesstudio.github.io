@@ -11,7 +11,8 @@
             .informations h2,
             .informations .texte,
             .informations .ligne,
-            .informations .photo {
+            .informations .photo,
+            .informations .probleme {
                 opacity: 0; /* Opacité initiale à 0 */
                 transform: translateY(100px); /* Translation initiale de 20 pixels vers le bas */
                 transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out; /* Animation */
@@ -21,7 +22,8 @@
             .informations h2.visible,
             .informations .texte.visible,
             .informations .ligne.visible,
-            .informations .photo.visible {
+            .informations .photo.visible,
+            .informations .probleme.visible {
                 opacity: 1;
                 transform: translateY(0);
             }
@@ -79,354 +81,7 @@
                 <h2 class="title titlet3">Déroulement du Projet</h2>
                 <hr class="ligne lignel3">
                 <br>
-                <div class="history-tl-container">
-                    <ul class="tl">
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                13 Oct, 2023<br>
-                                Autre
-                            </div>
-                            <div class="item-title">Création du Repo Git</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                4 Nov, 2023<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Prototypes du Serveur et du Main Serveur</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                6 Nov 20,3<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Ajout de la création de Serveur par le Main Serveur</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                12 Nov, 2023<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Ajout de la Création de compte et de la connexion</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                13 Nov, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Création du Client</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                14 Nov, 2023<br>
-                                Map
-                            </div>
-                            <div class="item-title">Création de la Map Lvl 1</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                14 Nov, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout du menu de connection et d'inscription</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                15 Nov, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Création du Joueur</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                16 Nov, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout du menu de création et de connection au lobby</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                16 Nov, 2023<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout de l'algo de génération de la Map lvl 1 Version 1</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                16 Nov, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout du choix des classes</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                23 Nov, 2023<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Connection entre le client et le serveur terminée</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                24 Nov, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">AJout de l'envoi des coordonnées au serveur</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                25 Nov, 2023<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout de l'algo de génération de la Map lvl 1 Version 2</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                27 Nov, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Affichage des autres joueurs sur le CLient</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                30 Nov, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout du Systeme de réglages</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                3 Dec, 2023<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout du type et de la rotation aléatoire pour les salles de la Map lvl 1</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                3 Dec, 2023<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout des points de Spawn pour les IA et les Joueurs</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                4 Dec, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Affichage des Pseudo au dessus des autres joueurs</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                7 Dec, 2023<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Passage du protocole TCP vers UDP pour le Serveur</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                8 Dec, 2023<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout d'une météo dynamique sur la Map lvl 1</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                16 Dec, 2023<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout d'un mode de Debug et fin de la Map lvl 1</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                21 Dec, 2023<br>
-                                IA
-                            </div>
-                            <div class="item-title">Création des IA de base</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                22 Dec, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Finalisation des controles du personnage</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                22 Dec, 2023<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Création du Chat de communication</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                25 Dec, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout des UI et du Resize du texte</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                25 Dec, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Systeme de Sauvegarde des paramètres</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                28 Dec, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout du Game Manager qui gére les phases du jeu</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                31 Dec, 2023<br>
-                                Client
-                            </div>
-                            <div class="item-title">Traduction du jeu dans differentes langues</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                6 jan, 2024<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout des attaques à distance des personnages</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                6 jan, 2024<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Synchronisation des attaques à distance sur tout les clients</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                8 jan, 2024<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout de commande dans le chat</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                16 jan, 2024<br>
-                                Client
-                            </div>
-                            <div class="item-title">Animation du Chevalier</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                17 jan, 2024<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout d'un systeme de connection rapide</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                22 jan, 2024<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Extrapolation des coordonnées pour éviter le lag</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                24 jan, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout de la salle du Boss Lvl 1</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                25 jan, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Création de la Map Lvl 2</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                27 jan, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout de l'algo de génération de la Map lvl 2</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                27 jan, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Création Map lvl 3</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                29 jan, 2024<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Synchronisation de la seed avec tout les clients</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                1 fév, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout d'un distance de rendu</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                1 fév, 2024<br>
-                                Serveur
-                            </div>
-                            <div class="item-title">Création de vrai nombre aléatoire pour la seed</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                2 fév, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout de l'algo de génération de la Map lvl 3</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                5 fév, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout EasterEgg</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                7 fév, 2024<br>
-                                IA
-                            </div>
-                            <div class="item-title">IA de base terminée</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                8 fév, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout d'une map Placeholder</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                8 fév, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout d'un Systeme pour passer d'un niveau à un autre</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                27 fév, 2024<br>
-                                Map
-                            </div>
-                            <div class="item-title">Ajout d'un syteme pour indiquer l'emplacement des autres joueurs</div>
-                        </li>
-                        <li class="tl-item" ng-repeat="item in retailer_history">
-                            <div class="timestamp">
-                                8 Mar, 2024<br>
-                                Client
-                            </div>
-                            <div class="item-title">Ajout des animations pour tout les personnages</div>
-                        </li>
-
-                    </ul>
-                </div>
+                <p class="texte textet3"><a href="project.html">Lien de la frise</a></p>
                 <div class="probleme">
                     <h2 class="title">Problèmes et Solutions</h2>
 
@@ -487,6 +142,9 @@
 
         const h2Element3 = document.querySelector('.informations .titlet3');
         const h2Element3bis = document.querySelector('.informations .lignel3');
+        const h2Element3text = document.querySelector('.informations .textet3');
+
+        const h2Element4 = document.querySelector('.informations .probleme');
 
         window.addEventListener('scroll', () => {
             const rect = h2Element.getBoundingClientRect();
@@ -541,6 +199,22 @@
             else {
                 h2Element3.classList.remove('visible');
                 h2Element3bis.classList.remove('visible');
+            }
+
+            const rect6 = h2Element3text.getBoundingClientRect();
+            if (rect6.top < window.innerHeight) {
+                h2Element3text.classList.add('visible');
+            }
+            else {
+                h2Element3text.classList.remove('visible');
+            }
+
+            const rect7 = h2Element4.getBoundingClientRect();
+            if (rect7.top < window.innerHeight) {
+                h2Element4.classList.add('visible');
+            }
+            else {
+                h2Element4.classList.remove('visible');
             }
         });
     </script>

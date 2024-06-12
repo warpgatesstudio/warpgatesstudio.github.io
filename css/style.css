@@ -420,3 +420,14 @@ ul.tl li .timestamp{
     }
 }
 
+.degrade-horizontal {
+    background: linear-gradient(to right, gold, black);
+}
+
+.informations > .textet3 > a {
+    color: white;
+}
+
+.informations > .textet3 > a:hover {
+    text-decoration: none;
+}
