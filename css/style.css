@@ -431,3 +431,12 @@ ul.tl li .timestamp{
 .informations > .textet3 > a:hover {
     text-decoration: none;
 }
+
+.lien a {
+    color: white;
+
+}
+
+.lien > a:hover {
+    text-decoration: none;
+}
